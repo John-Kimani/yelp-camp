@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button, Card, Container, Form } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 interface ISignUpPage {};
 
@@ -35,7 +36,7 @@ const SignUpPage: React.FC<ISignUpPage> = () => {
             </Form>
         </Card.Body>
     </Card>
-    <p className='text-center'>    Already have an account? Log in</p>
+    <p className='text-center'>Already have an account? <Link to='/login'>Login</Link></p>
     </div>
     </Container>
     </>
