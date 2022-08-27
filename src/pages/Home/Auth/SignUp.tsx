@@ -28,7 +28,7 @@ const SignUpPage: React.FC<ISignUpPage> = () => {
                     <Form.Control type='password' required />
                 </Form.Group>
 
-                <Button className='w-100' type='submit'>Sign Up</Button>
+                <Button className='w-100 mt-3' type='submit'>Sign Up</Button>
             </Form>
         </Card.Body>
     </Card>

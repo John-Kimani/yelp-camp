@@ -5,6 +5,8 @@ import HomePage from "./pages/Home/Home";
 import { initializeApp } from "firebase/app";
 import { config } from "./config/config";
 import AuthRoute from "./context/AuthRoute";
+import SignUpPage from "./pages/Home/Auth/SignUp";
+import { Container } from "react-bootstrap";
 
 initializeApp(config.firebaseConfig);
 
@@ -12,7 +14,8 @@ export interface IApplicationProps {}
 
 const Application = () => {
   return (
-    <BrowserRouter>
+    <Container>
+          <BrowserRouter>
       <Routes>
         <Route
           path="/"
@@ -23,8 +26,10 @@ const Application = () => {
           }
         />
         <Route path="/login" element={<LoginPage />} />
+        <Route path='/signup' element={<SignUpPage />} />
       </Routes>
     </BrowserRouter>
+    </Container>
   );
 };
 
