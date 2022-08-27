@@ -1,11 +1,14 @@
 import React from 'react';
-import { Button, Card, Form } from 'react-bootstrap';
+import { Button, Card, Container, Form } from 'react-bootstrap';
 
 interface ISignUpPage {};
 
 const SignUpPage: React.FC<ISignUpPage> = () => {
   return (
     <>
+    <Container className='d-flex align-items-center justify-content-center'
+        style={{minHeight: '100vh'}}>
+    <div className="w-100 mt-2" style={{maxWidth: '400px'}}>
     <Card>
         <Card.Body>
             <h2 className='text-center mb-4'>Sign Up</h2>
@@ -28,13 +31,13 @@ const SignUpPage: React.FC<ISignUpPage> = () => {
                     <Form.Control type='password' required />
                 </Form.Group>
 
-                <Button className='w-100 mt-3' type='submit'>Sign Up</Button>
+                <Button className='submit-btn w-100 mt-3' variant='dark' type='submit'>Sign Up</Button>
             </Form>
         </Card.Body>
     </Card>
-    <div className="text-center w-100 mt-2">
-    Already have an account? Log in
+    <p className='text-center'>    Already have an account? Log in</p>
     </div>
+    </Container>
     </>
   )
 }
