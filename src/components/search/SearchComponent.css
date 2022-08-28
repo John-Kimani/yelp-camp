@@ -1,0 +1,22 @@
+.hero-section {
+    border: 1px solid yellow;
+    margin-top: 15px;
+    padding: 5%;
+}
+
+.right-content{
+    width: 50%;
+}
+
+.link {
+    text-decoration: underline;
+    color: black;
+}
+
+.search-form{
+    display: flex;
+}
+
+.search-input {
+    margin-right: 3%;
+}

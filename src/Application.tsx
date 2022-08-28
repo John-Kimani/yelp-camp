@@ -8,6 +8,7 @@ import AuthRoute from "./context/AuthRoute";
 import SignUpPage from "./pages/Home/Auth/SignUp";
 import { Container } from "react-bootstrap";
 import NavbarComponent from "./components/Navbar";
+import SearchComponent from "./components/search/SearchComponent";
 
 initializeApp(config.firebaseConfig);
 
@@ -18,6 +19,7 @@ const Application = () => {
     <Container>
       <BrowserRouter>
       <NavbarComponent />
+      <SearchComponent />
         <Routes>
           <Route
             path="/"
