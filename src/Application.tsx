@@ -7,6 +7,7 @@ import { config } from "./config/config";
 import AuthRoute from "./context/AuthRoute";
 import SignUpPage from "./pages/Home/Auth/SignUp";
 import { Container } from "react-bootstrap";
+import NavbarComponent from "./components/Navbar";
 
 initializeApp(config.firebaseConfig);
 
@@ -15,20 +16,21 @@ export interface IApplicationProps {}
 const Application = () => {
   return (
     <Container>
-          <BrowserRouter>
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <AuthRoute>
-              <HomePage />
-            </AuthRoute>
-          }
-        />
-        <Route path="/login" element={<LoginPage />} />
-        <Route path='/signup' element={<SignUpPage />} />
-      </Routes>
-    </BrowserRouter>
+      <BrowserRouter>
+      <NavbarComponent />
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <AuthRoute>
+                <HomePage />
+              </AuthRoute>
+            }
+          />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/signup" element={<SignUpPage />} />
+        </Routes>
+      </BrowserRouter>
     </Container>
   );
 };
