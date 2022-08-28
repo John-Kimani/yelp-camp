@@ -3,16 +3,16 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { getAuth, signOut } from 'firebase/auth';
 
-export interface INavbarComponent {}
+export interface INavbarComponent {};
 
-const NavbarComponent = () => {
+const NavbarComponent: React.FC<INavbarComponent> = () => {
 
     const auth = getAuth()
 
 
   return (
     <Navbar variant='light'>
-      <Navbar.Brand>
+      <Navbar.Brand className='brand-name'>
         {/* <img
           src="../assets/yelpCamp-logo.png"
           className="d-inline-block align-top"

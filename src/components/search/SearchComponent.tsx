@@ -18,7 +18,7 @@ const SearchComponent = () => {
           </Form.Group>
           <Button variant="dark">Search</Button>
         </Form>
-        <a className="link">or add your own campground</a>
+        <a className="link" href="#home">or add your own campground</a>
       </Card.Body>
     </section>
 
