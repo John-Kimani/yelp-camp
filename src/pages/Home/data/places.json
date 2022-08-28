@@ -7,26 +7,26 @@
     {
         "name": "Calaguas Islands",
         "description": "A paradise of islands that can rival the white sand beauty of Boracay.",
-        "imageUrl": "../images/Calaguas Island.jpg"
+        "imageUrl": "./images/Calaguas Island.jpg"
     },
     {
         "name": "Onay Beach",
         "description": "This is one of the best beach camping sites, beautiful and pristine.",
-        "imageUrl": "./Onay Beach.jpg"
+        "imageUrl": "./images/Onay Beach.jpg"
     },
     {
         "name": "Seven Sisters Waterfall",
         "description": "The Seven Sisters is the 39th tallest waterfall in Norway.",
-        "imageUrl": "../images/Seven Sisters Waterfall.jpg"
+        "imageUrl": "./images/Seven Sisters Waterfall.jpg"
     },
     {
         "name": "Latik Riverside",
         "description": "Philipines is of the most dazzling countries all over Asia.",
-        "imageUrl": "../images/Latik RIverside.jpg"
+        "imageUrl": "./images/Latik Riverside.jpg"
     },
     {
         "name": "Buloy Springs",
         "description": "This is one of the best beach camping sites, beautiful and pristine.",
-        "imageUrl": "../images/Buloy Springs.jpg"
+        "imageUrl": "./images/Buloy Springs.jpg"
     }
 ]
