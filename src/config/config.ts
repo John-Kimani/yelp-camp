@@ -1,10 +1,10 @@
 export const config = {
     firebaseConfig: {
-        apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
-        authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
-        projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
-        storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
-        messagingSenderId: process.env.REACT_APP_FIREBASE_FIREBASE_MESSAGING_SENDER_ID,
-        appId: process.env.REACT_APP_FIREBASE_APP_ID 
+        apiKey: "AIzaSyDhDXQpxYv0fF2qMORRxxcpsN4X7VkQAdU",
+        authDomain: "yelp-camp-aefdb.firebaseapp.com",
+        projectId: "yelp-camp-aefdb",
+        storageBucket: "yelp-camp-aefdb.appspot.com",
+        messagingSenderId: "438675195634",
+        appId: "1:438675195634:web:3591d33f100cd7fa06b26b"
     }
 }
