@@ -19,8 +19,6 @@ const Application = () => {
   return (
     <Container>
       <BrowserRouter>
-      <NavbarComponent />
-      <SearchComponent />
         <Routes>
           <Route
             path="/"

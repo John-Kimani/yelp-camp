@@ -2,6 +2,8 @@ import React from 'react';
 import { getAuth, signOut } from 'firebase/auth';
 import PlacesComponent from '../../components/Places';
 import placesData from './data/places.json';
+import NavbarComponent from '../../components/Navbar';
+import SearchComponent from '../../components/search/SearchComponent';
 
 export interface IHomePageProps {};
 
@@ -15,11 +17,19 @@ const HomePage: React.FC<IHomePageProps> = (props) => {
   
 
   return (
-    <div>
+    <main>
+      {/* navbar */}
+      <NavbarComponent />
+      <SearchComponent />
+      <div>
         {placeList}
-        <p>Home page (protected with firebase)</p>
-        <button onClick={()=> signOut(auth)}>Sign Out of Firebase</button>
-    </div>
+      </div>
+    </main>
+    // <div>
+    //     {placeList}
+    //     <p>Home page (protected with firebase)</p>
+    //     <button onClick={()=> signOut(auth)}>Sign Out of Firebase</button>
+    // </div>
   )
 };
 
