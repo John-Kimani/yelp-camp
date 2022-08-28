@@ -1,18 +1,20 @@
 import React from "react";
 import { Card, Button } from "react-bootstrap";
 
-export interface IPlacesComponent {}
+export interface IPlacesComponent {
+  imageUrl: string;
+  name: string;
+  description: string
+}
 
-const PlacesComponent: React.FC<IPlacesComponent> = () => {
+const PlacesComponent: React.FC<IPlacesComponent> = (props) => {
   return (
     <section className="places-cards">
       <Card className="place-card">
-        {/* <Card.Img>
-            <img src='../assets/images/Buloy Springs.jpg' />
-        </Card.Img> */}
+        <Card.Img src={props.imageUrl} alt={props.name} />
         <Card.Body>
-        <Card.Title>Mount Ulap</Card.Title>
-          <p>One of the most famous hikes in Benguet in Mt Ulap in Itogon.</p>
+        <Card.Title>{props.name}</Card.Title>
+          <p>{props.description}</p>
           <Button variant="outline-dark"> View Campground </Button>
         </Card.Body>
       </Card>
