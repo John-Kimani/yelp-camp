@@ -1,13 +1,11 @@
 import React from "react";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import { getAuth, signOut } from 'firebase/auth';
 
 export interface INavbarComponent {};
 
 const NavbarComponent: React.FC<INavbarComponent> = () => {
 
-    const auth = getAuth()
 
 
   return (
@@ -30,7 +28,7 @@ const NavbarComponent: React.FC<INavbarComponent> = () => {
         <Nav className="ms-auto">
             <Nav.Link href='#'>Profile</Nav.Link>
             <Nav.Item>
-            <Nav.Link type='submit' onClick={()=> signOut(auth)}>Logout</Nav.Link>
+            <Nav.Link type='submit'>Logout</Nav.Link>
             </Nav.Item>
         </Nav>
       </Navbar.Collapse>
