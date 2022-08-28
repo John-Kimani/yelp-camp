@@ -2,3 +2,11 @@
     font-style: bold;
     font-weight: bold;
 }
+
+.places-cards {
+    margin-top: 40px;
+}
+
+.place-card{
+    padding: 5px;
+}
