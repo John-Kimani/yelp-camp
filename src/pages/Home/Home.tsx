@@ -4,6 +4,8 @@ import PlacesComponent from '../../components/Places';
 import placesData from './data/places.json';
 import NavbarComponent from '../../components/Navbar';
 import SearchComponent from '../../components/search/SearchComponent';
+import FooterComponent from '../../components/Footer';
+import "./home.css"
 
 export interface IHomePageProps {};
 
@@ -21,9 +23,10 @@ const HomePage: React.FC<IHomePageProps> = (props) => {
       {/* navbar */}
       <NavbarComponent />
       <SearchComponent />
-      <div>
-        {placeList}
+      <div className='cards-section'>
+      {placeList}
       </div>
+      <FooterComponent />
     </main>
     // <div>
     //     {placeList}

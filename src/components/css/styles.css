@@ -3,10 +3,8 @@
     font-weight: bold;
 }
 
-.places-cards {
-    margin-top: 40px;
-}
-
-.place-card{
-    padding: 5px;
+#view-camp-btn {
+    width: 100%;
+    font-weight: bolder;
+    height: 50px;
 }
