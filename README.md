@@ -6,9 +6,6 @@ It is a simple dashboard/landing page respresentation that displays various camp
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Screenshot
-![Landing Page](./public/yelp-camp-landing-page.png)
-
 ## Installation
 Guide to install Yelp Camp setup.
 
